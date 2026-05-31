@@ -24,6 +24,10 @@ export const routes: Routes = [
         loadComponent: () => import('./features/celebrations/celebrations-list').then(m => m.CelebrationsListComponent),
       },
       {
+        path: 'celebrations/new',
+        loadComponent: () => import('./features/celebrations/celebration-form').then(m => m.CelebrationFormComponent),
+      },
+      {
         path: 'celebrations/:id',
         loadComponent: () => import('./features/celebrations/celebration-detail').then(m => m.CelebrationDetailComponent),
       },
